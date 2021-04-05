@@ -1,0 +1,35 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-info">
+                        <h2 class="card-title">Ajouter catégorie</h2>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <form name="registerForm" [formGroup]="formGroup" novalidate>
+                            <mat-form-field>
+
+                                <label>
+                                    <input  type="number"[(ngModel)]= "newCategorie.idC" matInput placeholder="ID" formControlName="idC" autocomplete="id">
+                                </label>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <label>
+                                    <input type="text"[(ngModel)]= "newCategorie.codeC"  matInput placeholder="Code" formControlName="codeC" autocomplete="codeC">
+                                </label>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <label>
+                                    <input  type="text"[(ngModel)]= "newCategorie.libelle" matInput placeholder="Libelle" formControlName="libelle" autocomplete="libelle">
+                                </label>
+                            </mat-form-field>
+                            <button type="submit" (click)="addCategorie()" [disabled]="formGroup?.invalid" style="color: white; background-color: #1fc1d5" mat-raised-button>Ajouter</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
