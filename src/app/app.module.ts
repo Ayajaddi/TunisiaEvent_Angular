@@ -51,6 +51,7 @@ import {UpdateCategorieComponent} from './categorie/update-categorie/update-cate
 import {RegisterComponent} from './user/register/register.component';
 import {LoginComponent} from './user/login/login.component';
 import { IndexComponent } from './index/index.component';
+import { ProfileComponent } from './profile/profile.component';
 
 
 @NgModule({
@@ -106,6 +107,8 @@ import { IndexComponent } from './index/index.component';
         UpdateCategorieComponent,
 
         IndexComponent,
+
+        ProfileComponent,
 
 
     ],

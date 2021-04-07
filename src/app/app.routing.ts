@@ -33,10 +33,14 @@ const routes: Routes = [
        path: 'index',
         component: IndexComponent
     },
-    // {
-    //     path: 'register',
-    //     component: RegisterComponent
-    // },
+     {
+        path: 'register',
+         component: RegisterComponent
+    },
+    {
+        path: 'login',
+         component: LoginComponent
+    },
     // {
     //     path: 'add-event',
     //     component: AddEventComponent

@@ -1,0 +1,36 @@
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header card-header-danger">
+                        <h2 class="card-title">Modifier Profile</h2>
+                    </div>
+                    <div class="card-body table-responsive">
+                      <!--  <form name="registerForm" [formGroup]="formGroup" novalidate> -->
+                             <form >
+                           
+                            <mat-form-field>
+                                <label>
+                                    <input type="text"[(ngModel)]= "UpdateProfile.username"  matInput placeholder="Username" formControlName="codeC" autocomplete="codeC">
+                                </label>
+                            </mat-form-field>
+                            <mat-form-field>
+                                <label>
+                                    <input  type="email"[(ngModel)]= "UpdateProfile.email" matInput placeholder="Email" formControlName="libelle" autocomplete="libelle">
+                                </label>
+                            </mat-form-field>
+                            <!-- <button type="submit" (click)="addCategorie()" [disabled]="formGroup?.invalid" style="color: white; background-color: #1fc1d5" mat-raised-button>Ajouter</button> -->
+                            <button type="submit" (click)="addCategorie()"  style="color: white; background-color: #e44343" mat-raised-button> <span class="material-icons">
+                                add_circle_outline
+                            </span>Modifier</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

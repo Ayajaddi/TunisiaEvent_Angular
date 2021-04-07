@@ -13,6 +13,7 @@ import {AddCategorieComponent} from '../../categorie/add-categorie/add-categorie
 import {UpdateCategorieComponent} from '../../categorie/update-categorie/update-categorie.component';
 import { AddEventComponent } from 'app/event/add-event/add-event.component';
 import { ListEventComponent } from 'app/event/list-event/list-event.component';
+import { ProfileComponent } from 'app/profile/profile.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -65,6 +66,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'list-event/add-event',      component: AddEventComponent},
     
     { path: 'user-profile',   component: UserProfileComponent },
+    { path: 'profile',   component: ProfileComponent },
     { path: 'table-list',     component: TableListComponent },
     { path: 'typography',     component: TypographyComponent },
     { path: 'icons',          component: IconsComponent },
